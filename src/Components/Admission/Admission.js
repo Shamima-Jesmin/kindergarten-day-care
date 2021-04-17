@@ -17,7 +17,7 @@ const Admission= () => {
     const [service, setService] = useState([])
     console.log(service)
     useEffect(() => {
-      const url= `http://localhost:5000/totalClasses`
+      const url= `https://childcare123.herokuapp.com/totalClasses`
       fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -35,7 +35,7 @@ const Admission= () => {
     const handleOrders = () => {
       console.log('checkout clicked')
       const newOrders = { ...loggedInUser, ...service }
-      fetch('http://localhost:5000/addOrders', {
+      fetch('https://childcare123.herokuapp.com/addOrders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newOrders)

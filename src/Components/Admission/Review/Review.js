@@ -12,7 +12,7 @@ const Review = () => {
       designation: data.designation,
       description: data.description
     };
-    const url = `http://localhost:5000/addReview`
+    const url = `https://childcare123.herokuapp.com/addReview`
     console.log(reviewData)
     fetch(url, {
       method: 'POST',

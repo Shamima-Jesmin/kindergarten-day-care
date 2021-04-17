@@ -14,9 +14,9 @@ const ClassCard = (props) => {
                         <div>
                             {/* {
                     singleClass.image ? <img style={{height:'100px'}} src= {`data: image/png;base64,${singleClass.image.img}`} alt=""/>
-                    : <img style={{height:'100px'}}src={`http://localhost:5000/${singleClass.image}`} alt=""/>
+                    : <img style={{height:'100px'}}src={`https://childcare123.herokuapp.com/${singleClass.image}`} alt=""/>
                 } */}
-                        <img style={{ height: '100px' }} src={`http://localhost:5000/${image}`} alt="" />
+                        <img style={{ height: '100px' }} src={`https://childcare123.herokuapp.com/${image}`} alt="" />
                         <div class="card-body">
                             <h5 class="card-title">{name}</h5>
                             <small>Age Group: {age}</small>

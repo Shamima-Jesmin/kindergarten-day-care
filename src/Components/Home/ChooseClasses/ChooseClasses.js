@@ -40,7 +40,7 @@ const ChooseClasses = () => {
     const [classes, setClasses] = useState([])
     console.log(classes)
     useEffect(() => {
-        fetch('http://localhost:5000/totalClasses')
+        fetch('https://childcare123.herokuapp.com/totalClasses')
             .then(res => res.json())
             .then(data => setClasses(data))
 

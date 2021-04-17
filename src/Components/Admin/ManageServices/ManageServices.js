@@ -6,7 +6,7 @@ import ManageAllServices from './ManageAllServices/ManageAllServices';
 const ManageServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/totalClasses`)
+        fetch(`https://childcare123.herokuapp.com/totalClasses`)
             .then(res => res.json())
             .then(data => {
                 setServices(data)

@@ -9,7 +9,7 @@ const ManageAllServices = (props) => {
     const [del, setDel] = useState()
     const deleteProduct = (_id) => {
         console.log(_id)
-        fetch(`http://localhost:5000/delete/` + _id, {
+        fetch(`https://childcare123.herokuapp.com/delete/` + _id, {
             method: 'DELETE',
 
         })

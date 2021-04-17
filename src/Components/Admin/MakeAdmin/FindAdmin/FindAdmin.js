@@ -3,17 +3,17 @@ import { UserContext } from '../../../../App';
 
 const FindAdmin = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const [isAdmin, setIsAdmin] =useState[null]
-
+    const [isAdmin, setIsAdmin] =useState[false]
+   console.log(isAdmin)
     useEffect(()=>{
-        const url = `http://localhost:5000/addReview`
+        const url = `https://childcare123.herokuapp.com/findAdmin`
         console.log(reviewData)
         fetch(url, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({email: userInfo.email})
+          body: JSON.stringify({email: loggedInUser.email})
         })
           .then(res => res.json())
             console.log('server side res', res)

@@ -12,7 +12,7 @@ const MakeAdmin = () => {
       email:data.email,
       description: data.description
     };
-    const url = `http://localhost:5000/addAdmin`
+    const url = `https://childcare123.herokuapp.com/addAdmin`
     console.log(adminData)
     fetch(url, {
       method: 'POST',

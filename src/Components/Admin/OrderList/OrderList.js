@@ -6,7 +6,7 @@ import SideNav from '../../Shared/SideNav/SideNav';
 const OrderList = () => {
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/orders`)
+        fetch(`https://childcare123.herokuapp.com/orders`)
             .then(res => res.json())
             .then(data => {
                 setOrders(data)

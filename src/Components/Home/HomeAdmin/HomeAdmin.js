@@ -5,7 +5,7 @@ const HomeAdmin = () => {
     const [admins, setAdmins] = useState([]);
   console.log(admins)
   useEffect(() => {
-    fetch(`http://localhost:5000/admin`)
+    fetch(`https://childcare123.herokuapp.com/admin`)
       .then(res => res.json())
       .then(data => {
         setAdmins(data)

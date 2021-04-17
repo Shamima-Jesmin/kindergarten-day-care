@@ -4,6 +4,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import SimpleCardForm from './SimpleCardForm';
 import Navbar from '../../Shared/Navbar/Navbar';
 import SideNav from '../../Shared/SideNav/SideNav';
+import UserSideNav from '../../Shared/UserSideNav/UserSideNav';
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -14,7 +15,7 @@ const Payment = () => {
         <div className='row'>
            <Navbar></Navbar>
            <div className='col-md-6'>
-           <SideNav></SideNav>
+          <UserSideNav></UserSideNav>
            </div>
            <div className='col-md-6'>
            <Elements stripe={stripePromise}>

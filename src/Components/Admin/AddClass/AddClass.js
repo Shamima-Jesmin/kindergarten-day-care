@@ -25,7 +25,7 @@ const AddClass = () => {
     formData.append('classNumber', info.classNumber);
     formData.append('fee', info.fee);
     formData.append('status', info.status);
-    fetch('http://localhost:5000/addClass', {
+    fetch('https://childcare123.herokuapp.com/addClass', {
       method: 'POST',
       body: formData
     })
