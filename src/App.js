@@ -16,10 +16,10 @@ import Admin from './Components/Admin/Admin';
 import AddClass from './Components/Admin/AddClass/AddClass';
 import OrderList from './Components/Admin/OrderList/OrderList';
 import ManageServices from './Components/Admin/ManageServices/ManageServices';
-import MakeAdmin from './Components/Admin/MakeAdmin/MakeAdmin';
 import AdmissionList from './Components/Admission/AdmissionList/AdmissionList';
 import Review from './Components/Admission/Review/Review';
 import Payment from './Components/Admission/Payment/Payment';
+import MakeAdmin from './Components/Admin/MakeAdmin/MakeAdmin'
 
 export const UserContext = createContext();
 function App() {

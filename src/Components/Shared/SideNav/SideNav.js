@@ -28,7 +28,7 @@ const SideNav = () => {
         <Link to="/orderList">Order List</Link>
         <Link to="/addClass">Add Class</Link>
         {
-          isAdmin && <Link to="/makeAdmin">Add Admin</Link>
+          isAdmin && <Link to="/makeAdmin">Make Admin</Link>
         }
         <Link to="/manageServices">Manage Services</Link>
       </Nav>
