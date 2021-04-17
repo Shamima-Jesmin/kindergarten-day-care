@@ -28,7 +28,7 @@ const AdmissionList = () => {
                     orders.map(order =>
                         <ListGroup.Item>Name:{order.name}
                             <ListGroup.Item>Email: {order.email}</ListGroup.Item>
-                            <ListGroup.Item>Fee: {order.fee}</ListGroup.Item>
+                            
                         </ListGroup.Item>
                     )
                 }

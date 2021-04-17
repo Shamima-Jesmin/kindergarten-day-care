@@ -7,7 +7,6 @@ const UserSideNav = () => {
         <div>
                  <Nav className="flex-column">
         <Link to="/admissionList">Admission List</Link>
-        <Link to="/admissionInfo">Admission Info</Link>
         <Link to="/review">review</Link>
         
       </Nav>

@@ -17,7 +17,6 @@ import AddClass from './Components/Admin/AddClass/AddClass';
 import OrderList from './Components/Admin/OrderList/OrderList';
 import ManageServices from './Components/Admin/ManageServices/ManageServices';
 import MakeAdmin from './Components/Admin/MakeAdmin/MakeAdmin';
-import AdmissionInfo from './Components/Admission/AdmissionInfo/AdmissionInfo';
 import AdmissionList from './Components/Admission/AdmissionList/AdmissionList';
 import Review from './Components/Admission/Review/Review';
 import Payment from './Components/Admission/Payment/Payment';
@@ -42,9 +41,6 @@ function App() {
        <PrivateRoute path='/admission/:id'>
         <Admission></Admission>
        </PrivateRoute>
-       <Route path="/admissionInfo">
-          <AdmissionInfo></AdmissionInfo>
-        </Route>
         <Route path="/admissionList">
           <AdmissionList></AdmissionList>
         </Route>

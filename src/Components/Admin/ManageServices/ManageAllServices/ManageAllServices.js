@@ -19,7 +19,7 @@ const ManageAllServices = (props) => {
     return (
         <div className="row ">
           
-            <div className='col-md-6'>
+            <div >
                 <Table className='table'>
                     <thead >
                         <tr className='col-md-3'>
